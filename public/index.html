@@ -21,24 +21,89 @@
 <body>
   <header>
     <!--Header Bar-->
-    <!--On desktop header is empty, sideNav is present and fixed-->
-    <!--On Mobile-->
-    <!--My photo as a brand and my name both on the left, also a hambuger icon for access sideNav-->
+    <!--On desktop-->
+    <!--navbar is hide, sideNav is present and fixed-->
+    <nav class="blue hide-on-med-and-up">
+      <!--On Mobile-->
+      <!--My photo as a brand and my name both on the left, also a hambuger icon for access sideNav-->
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </nav>
+
+    <!--Desktop sideNav-->
+    <ul class=" side-nav fixed left hide-on-med-and-down">
+      <!--Side nav always present on desktop, hide on mobile-->
+      <!--Show the index for the different section, make auto hide when user select content-->
+      <li><!--My photo as a brand-->
+        <!--My photo-->
+
+      </li>
+      <li><!--Quick contact info-->
+        <p><!--Name and email--></p>
+      </li>
+      <li><!--Link to home-->
+        <a href="#home">Home</a>
+      </li>
+      <li><!--Link to about-me-->
+        <a href="#about-me">About Me</a>
+      </li>
+      <li><!--Link to project-->
+        <a href="#project">Project</a>
+      </li>
+      <li><!--Link to resume-->
+        <a href="#resume">Resume</a>
+      </li>
+      <li><!--Link to contact-->
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+
+
+    <!--Mobile sideNav-->
+    <ul id="slide-out" class=" side-nav fixed left hide-on-med-and-up">
+      <!--Side nav always present on desktop, hide on mobile-->
+      <!--Show the index for the different section, make auto hide when user select content-->
+      <li><!--My photo as a brand-->
+        <!--My photo-->
+
+      </li>
+      <li><!--Quick contact info-->
+        <p><!--Name and email--></p>
+      </li>
+      <li><!--Link to home-->
+        <a href="#home">Home</a>
+      </li>
+      <li><!--Link to about-me-->
+        <a href="#about-me">About Me</a>
+      </li>
+      <li><!--Link to project-->
+        <a href="#project">Project</a>
+      </li>
+      <li><!--Link to resume-->
+        <a href="#resume">Resume</a>
+      </li>
+      <li><!--Link to contact-->
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
   </header>
 
-  <div>
-    <!--Side nav always present on desktop, hide on mobile-->
-    <!--Show the index for the different section, make auto hide when user select content-->
-  </div>
 
-  <article class="">
+
+  <main class="">
     <!--Main content area-->
     <!--Add a background image, possible use of parallax effect-->
     <section id="home">
       <!--Welcome message (home)-->
+      <p>
+        home
+      </p>
     </section>
     <section id="about-me">
       <!--About me section-->
+      <p>
+        about
+      </p>
     </section>
     <section id="project">
       <!--Project-->
@@ -55,6 +120,6 @@
     <div>
       <!--Floating button for social page, only for mobile-->
     </div>
-  </article>
+  </main>
 </body>
 </html>
