@@ -1,9 +1,32 @@
 header, main, footer {
     padding-left: 240px;
   }
-
+main {
+  top:64px;
+  position: relative;
+}
   @media only screen and (max-width : 992px) {
     header, main, footer {
       padding-left: 0;
     }
   }
+  .profile-bg {
+    background: url("/images/profileBG.jpeg");
+    height: 135px;
+    color:white;
+  }
+
+  .fix {
+    position:fixed;
+    z-index: 10;
+  }
+  .logo{
+    margin-top: 15px;
+  }
+
+  /*My custom wave effect*/
+  .waves-effect.waves-blue .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #2196f3;
+    }

@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="js/main.js"></script>
   </head>
-<body>
+<body class="blue lighten-2">
   <header>
     <!--Header Bar-->
     <!--On desktop-->
     <!--navbar is hide, sideNav is present and fixed-->
-    <nav class="blue hide-on-med-and-up">
+    <nav class="blue fix hide-on-med-and-up">
       <!--On Mobile-->
       <!--My photo as a brand and my name both on the left, also a hambuger icon for access sideNav-->
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -33,39 +33,28 @@
     <ul class=" side-nav fixed left hide-on-med-and-down">
       <!--Side nav always present on desktop, hide on mobile-->
       <!--Show the index for the different section, make auto hide when user select content-->
-      <li><!--My photo as a brand-->
+      <li class="profile-bg"><!--My photo as a brand-->
         <!--My photo-->
-
+          <img src="images/ProfilePic.png" alt="Jean Carlo Semprit Rodriguez photo" class="circle logo"/>
+          <h6>Jean Carlos Semprit Rodriguez</h6>
       </li>
-      <li><!--Quick contact info-->
-        <p><!--Name and email--></p>
-      </li>
-      <li><!--Link to home-->
-        <a href="#home">Home</a>
-      </li>
-      <li><!--Link to about-me-->
-        <a href="#about-me">About Me</a>
-      </li>
-      <li><!--Link to project-->
-        <a href="#project">Project</a>
-      </li>
-      <li><!--Link to resume-->
-        <a href="#resume">Resume</a>
-      </li>
-      <li><!--Link to contact-->
-        <a href="#contact">Contact</a>
-      </li>
+      <!--Link to home-->
+      <li><a href="#home" class="waves-effect waves-blue ">Home</a></li>
+      <!--Link to about-me-->
+      <li><a href="#about-me" class="waves-effect waves-blue ">About Me</a></li>
+      <!--Link to project-->
+      <li><a href="#project" class="waves-effect waves-blue ">Project</a></li>
+      <!--Link to resume-->
+      <li><a href="#resume" class="waves-effect waves-blue ">Resume</a></li>
+      <!--Link to contact-->
+      <li><a href="#contact" class="waves-effect waves-blue ">Contact</a></li>
     </ul>
-
-
-
     <!--Mobile sideNav-->
     <ul id="slide-out" class=" side-nav fixed left hide-on-med-and-up">
       <!--Side nav always present on desktop, hide on mobile-->
       <!--Show the index for the different section, make auto hide when user select content-->
-      <li><!--My photo as a brand-->
+      <li class="profile-bg"><!--My photo as a brand-->
         <!--My photo-->
-
       </li>
       <li><!--Quick contact info-->
         <p><!--Name and email--></p>
@@ -88,35 +77,114 @@
     </ul>
   </header>
 
+  <main class=" ">
+    <div class="container">
+      <!--Main content area-->
+      <!--Add a background image, possible use of parallax effect-->
+      <div class="row section">
+        <section id="home" class="scrollspy">
+          <!--Welcome message (home)-->
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>Welcome to my Website!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="row section">
+        <section id="about-me" class="scrollspy">
+          <!--About me section-->
+          <div class="col s12 m8 offset-m2">
+            <div class="card large">
+              <div class="card-image">
+                <img src="images/profilePic.png">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row section">
+        <section id="project" class="scrollspy">
+          <!--Project-->
+          <ul class="collection z-depth-1">
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <span class="title">Title</span>
+              <p>First Line <br>
+                 Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                 Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                 Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                 Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="row section">
+        <section id="resume" class="scrollspy">
+          <!--Resume-->
+        </section>
+      </div>
+      <div class="row section">
+        <section id="contact" class="scrollspy">
+          <!--Contact-->
+        </section>
+      </div>
+      <section>
+        <!--Thank you message, display text over the background of the parallax-->
+      </section>
+    </div>
 
-
-  <main class="">
-    <!--Main content area-->
-    <!--Add a background image, possible use of parallax effect-->
-    <section id="home">
-      <!--Welcome message (home)-->
-      <p>
-        home
-      </p>
-    </section>
-    <section id="about-me">
-      <!--About me section-->
-      <p>
-        about
-      </p>
-    </section>
-    <section id="project">
-      <!--Project-->
-    </section>
-    <section id="resume">
-      <!--Resume-->
-    </section>
-    <section id="contact">
-      <!--Contact-->
-    </section>
-    <section>
-      <!--Thank you message, display text over the background of the parallax-->
-    </section>
     <div>
       <!--Floating button for social page, only for mobile-->
     </div>
