@@ -1,12 +1,10 @@
-header, main, footer {
+header, footer, #home, section {
     padding-left: 240px;
   }
-main {
-  top:64px;
-  position: relative;
-}
+
+
   @media only screen and (max-width : 992px) {
-    header, main, footer {
+    header, section, footer {
       padding-left: 0;
     }
   }
@@ -30,3 +28,12 @@ main {
      of the button to still show through. */
       background-color: #2196f3;
     }
+
+.parallax-container {
+  height: 300px;
+}
+.parallax {
+  -webkit-filter:blur(7px);
+  -moz-filter:blur(7px);
+  filter: blur(7px);
+}
