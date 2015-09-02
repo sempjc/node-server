@@ -1,19 +1,33 @@
-header, footer, #home, section {
+header, footer, main {
     padding-left: 240px;
   }
+span {
+  margin: auto;
+}
 
-
+#about-me, #project, #resume, #contact {
+  padding-top: 50px;
+}
   @media only screen and (max-width : 992px) {
-    header, section, footer {
+    header, main, footer {
       padding-left: 0;
     }
   }
+
+  @media only screen and (max-width: 480px){
+    .parallax-container {
+      height: 300px;
+    }
+  }
+
   .profile-bg {
     background: url("/images/profileBG.jpeg");
     height: 135px;
     color:white;
   }
-
+.noPadding {
+  padding:0px !important;
+}
   .fix {
     position:fixed;
     z-index: 10;
@@ -30,10 +44,11 @@ header, footer, #home, section {
     }
 
 .parallax-container {
-  height: 300px;
+  height: 3
+  400px;
+  background: rgba(50,50,50, 0.5);
 }
-.parallax {
-  -webkit-filter:blur(7px);
-  -moz-filter:blur(7px);
-  filter: blur(7px);
+
+.iconColor {
+  color: #2196f3;
 }
