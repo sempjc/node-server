@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script> -->
     <!--Icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom modification to materialize JS-->
+    <script src="js/materialize.js"></script>
     <!--My Css and JS-->
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="js/main.js"></script>
-  </head>
+</head>
 <body>
   <header>
     <!--Header Bar-->
@@ -38,15 +40,15 @@
           <h6>Jean Carlos Semprit Rodriguez</h6>
       </li>
       <!--Link to home-->
-      <li><a href="#home" class="waves-effect waves-blue ">Home</a></li>
+      <li class="noPadding"><a href="#home" class="waves-effect waves-blue ">Home</a></li>
       <!--Link to about-me-->
-      <li><a href="#about-me" class="waves-effect waves-blue ">About Me</a></li>
+      <li class="noPadding"><a href="#about-me" class="waves-effect waves-blue ">About Me</a></li>
       <!--Link to project-->
-      <li><a href="#project" class="waves-effect waves-blue ">Project</a></li>
+      <li class="noPadding"><a href="#project" class="waves-effect waves-blue ">Project</a></li>
       <!--Link to resume-->
-      <li><a href="#resume" class="waves-effect waves-blue ">Resume</a></li>
+      <li class="noPadding"><a href="#resume" class="waves-effect waves-blue ">Resume</a></li>
       <!--Link to contact-->
-      <li><a href="#contact" class="waves-effect waves-blue ">Contact</a></li>
+      <li class="noPadding"><a href="#contact" class="waves-effect waves-blue ">Contact</a></li>
     </ul>
     <!--Mobile sideNav-->
     <ul id="slide-out" class=" side-nav fixed left hide-on-large-only">
@@ -57,38 +59,154 @@
           <img src="images/ProfilePic.png" alt="Jean Carlo Semprit Rodriguez photo" class="circle logo"/>
           <h6>Jean Carlos Semprit Rodriguez</h6>
       </li>
-      <li><!--Link to home-->
-        <a href="#home">Home</a>
-      </li>
-      <li><!--Link to about-me-->
-        <a href="#about-me">About Me</a>
-      </li>
-      <li><!--Link to project-->
-        <a href="#project">Project</a>
-      </li>
-      <li><!--Link to resume-->
-        <a href="#resume">Resume</a>
-      </li>
-      <li><!--Link to contact-->
-        <a href="#contact">Contact</a>
-      </li>
+      <!--Link to home-->
+      <li><a href="#home">Home</a></li>
+      <!--Link to about-me-->
+      <li>
+        <a href="#about-me">About Me</a></li>
+      <!--Link to project-->
+      <li><a href="#project">Project</a></li>
+      <!--Link to resume-->
+      <li><a href="#resume">Resume</a></li>
+      <!--Link to contact-->
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </header>
-  <!--Parallax 1-->
-  <div id="home" class=" parallax-container scrollspy">
-    <div class="parallax"><!--Background Image for parallax-->
-      <img src="/images/bg-5.jpg" alt="background-image" />
-    </div>
-  </div>
-  <section id="about-me" class="section white z-depth-2">
-    <div class="row container">
-      <h2 class="header">About Me</h2>
-      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-    </div>
-  </section>
+  </header><!--End header-->
+  <main class="main-content">
+    <!--Section 1 Welcome & parallax-->
+    <section id="home" class=" parallax-container valign-wrapper center-align scrollspy">
+      <div class="parallax"><!--Background Image for parallax-->
+        <img src="/images/bg-5.jpg" alt="background-image" />
+      </div>
+      <!--Greeting-->
+      <span><h1 class="white-text center-align"> Hi Welcome!</h1></span>
+    </section>
 
+    <!--Section 2: About-->
+    <section id="about-me" class="section white z-depth-1 scrollspy">
+      <div class="row container">
+        <h2>About me</h2>
+        <p>
+          Jean Carlo Semprit Rodriguez born in San Juan Puerto Rico.  A passionate student of computer engineer at Polytechnic University of Puerto Rico.  Jean Carlo  discover his passion for coding on October 2010 when he bought his first iPad.
+        </p>
+      </div>
+    </section>
 
+    <!--parallax-->
+    <section class="parallax-container valign-wrapper center-align scrollspy">
+      <div class="parallax"><!--Background Image for parallax-->
+        <img src="/images/laptopBg.jpeg" alt="background-image" />
+      </div>
+      <!--Some message-->
+      <span><h2 class="white-text center-align"> Some message</h2></span>
+    </section>
 
+    <!--Section 3: Project -->
+    <section id="project" class="section white z-depth-1 scrollspy">
+      <div class="row container">
+        <ul class="collection with-header">
+          <!--Header list-->
+          <li class="collection-header"><h4>Project</h4></li>
+          <!--Content list-->
+          <!--item 1-->
+          <li class="collection-item avatar">
+            <img src="#" alt="#" class="circle"/>
+            <span class="title">Memory Game</span>
+            <p>First Line <br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons iconColor">info</i></a>
+          </li><!--End item-->
+          <!--item 2-->
+          <li class="collection-item avatar">
+            <img src="#" alt="#" class="circle"/>
+            <span class="title">My first Portafolio</span>
+            <p>First Line <br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons iconColor">info</i></a>
+          </li><!--End item-->
+          <!--item 3-->
+          <li class="collection-item avatar">
+            <img src="#" alt="#" class="circle"/>
+            <span class="title">Tilde</span>
+            <p>First Line <br>
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons iconColor">info</i></a>
+          </li><!--End item-->
+        </ul>
+      </div>
+    </section>
 
+    <!--parallax-->
+    <section class=" parallax-container valign-wrapper center-align scrollspy">
+      <div class="parallax"><!--Background Image for parallax-->
+        <img src="/images/bg-5.jpg" alt="background-image" />
+      </div>
+      <!--Some message-->
+      <span><h2 class="white-text center-align"> Some message</h2></span>
+    </section>
+
+    <!--Section:4 Resume -->
+    <section id="resume" class="section white z-depth-1 scrollspy">
+      <div class="row container">
+        <h2>Resume</h2>
+        <p>
+          Jean Carlo Semprit Rodriguez born in San Juan Puerto Rico.  A passionate student of computer engineer at Polytechnic University of Puerto Rico.  Jean Carlo  discover his passion for coding on October 2010 when he bought his first iPad.
+        </p>
+      </div>
+    </section>
+
+    <!--parallax-->
+    <section class=" parallax-container valign-wrapper center-align scrollspy">
+      <div class="parallax"><!--Background Image for parallax-->
+        <img src="/images/bg-5.jpg" alt="background-image" />
+      </div>
+    </section>
+
+    <!--Section:5 Contact -->
+    <section id="contact" class="section white z-depth-1 scrollspy">
+      <div class="row container">
+        <!--Contact form-->
+        <div class="section row"><!--Contact me header-->
+          <div class="row blue-grey-text text-lighten-3 contactHeader center-align">
+            <h2>You can reach me at</h2>
+            <p>Phone Number: 787-688-0408</p>
+            <p>Email: jc.semprit@hotmail.com</p>
+          </div>
+          <form class="col s12">
+            <div class="row"><!--Form section 1: User name and Last name-->
+              <div class="input-field col s12"><!--User name info-->
+                <input id="first_name" type="text" class="validate blue-grey-text text-lighten-3">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s12"><!--User last name info-->
+                <input id="last_name" type="text" class="validate blue-grey-text text-lighten-3">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row"><!--Form section 2: User email and phone number-->
+              <div class="input-field col s12"><!--User Email-->
+                <input id="email" type="email" class="validate blue-grey-text text-lighten-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12"><!--User phone number-->
+                <input id="telephone" type="tel" patter="\d{3}[\-]\d{3}[\-]\d{4}" class="validate blue-grey-text text-lighten-3">
+                <label for="telephone">Phone Number (123-456-7890)</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-fiels col s12">
+                <textarea id="customer-msg" type="text" class="materialize-textarea blue-grey-text text-lighten-3 "></textarea>
+                <label for="customer-msg">Messge:</label>
+              </div>
+            </div>
+          </form>
+          <!--Submit button-->
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
