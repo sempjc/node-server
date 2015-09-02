@@ -4,6 +4,9 @@ header, footer, main {
 span {
   margin: auto;
 }
+h2, h4 {
+  color:#2196f3;
+}
 
 #about-me, #project, #resume, #contact {
   padding-top: 50px;
@@ -45,7 +48,7 @@ span {
 
 .parallax-container {
   height: 3
-  400px;
+  350px;
   background: rgba(50,50,50, 0.5);
 }
 
