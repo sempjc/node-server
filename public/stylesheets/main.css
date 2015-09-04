@@ -55,3 +55,6 @@ h2, h4 {
 .iconColor {
   color: #2196f3;
 }
+.skill-icon img {
+  height: 72px;
+}
