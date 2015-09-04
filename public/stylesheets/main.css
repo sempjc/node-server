@@ -58,3 +58,9 @@ h2, h4 {
 .skill-icon img {
   height: 72px;
 }
+
+@media only screen and (max-width : 400px)  {
+  #jQuerylogo {
+    height: 60px;
+  }
+}
