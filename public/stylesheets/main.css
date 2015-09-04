@@ -8,7 +8,7 @@ h2, h4 {
   color:#2196f3;
 }
 
-#about-me, #project, #resume, #contact {
+#about-me, #project, #skill, #contact {
   padding-top: 50px;
 }
   @media only screen and (max-width : 992px) {
