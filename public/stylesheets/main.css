@@ -47,8 +47,7 @@ h2, h4 {
     }
 
 .parallax-container {
-  height: 3
-  350px;
+  height:350px;
   background: rgba(50,50,50, 0.5);
 }
 
