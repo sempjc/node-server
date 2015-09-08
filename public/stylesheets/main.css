@@ -24,9 +24,16 @@ h2, h4 {
   }
 
   .profile-bg {
-    background: url("/images/profileBG.jpeg");
+    background: #2196f3;
+    border-bottom: 10px #FFEB3B solid;
     height: 135px;
     color:white;
+  }
+
+  .profile-bg img {
+    padding-top: 15px;
+    height: 115px;
+    margin: auto;
   }
 .noPadding {
   padding:0px !important;
