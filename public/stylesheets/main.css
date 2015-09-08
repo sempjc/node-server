@@ -8,6 +8,15 @@ h2, h4 {
   color:#2196f3;
 }
 
+i {
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+.side-nav li{
+  border-bottom: 1px solid #B6B6B6;
+}
+
 #about-me, #project, #skill, #contact {
   padding-top: 50px;
 }
@@ -54,7 +63,6 @@ h2, h4 {
     }
 
 .parallax-container {
-  height:350px;
   background: rgba(50,50,50, 0.5);
 }
 
