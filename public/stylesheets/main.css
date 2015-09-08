@@ -16,6 +16,9 @@ i {
 .side-nav li{
   border-bottom: 1px solid #B6B6B6;
 }
+.active-list {
+  border-right: 3px solid #2196f3;
+}
 
 #about-me, #project, #skill, #contact {
   padding-top: 50px;
@@ -34,7 +37,7 @@ i {
 
   .profile-bg {
     background: #2196f3;
-    border-bottom: 10px #FFEB3B solid;
+    border-bottom: 10px #FFEB3B solid !important;
     height: 135px;
     color:white;
   }

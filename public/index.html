@@ -22,37 +22,45 @@
 </head>
 <body>
   <header>
-    <!--Header Bar-->
-    <!--On desktop-->
-    <!--navbar is hide, sideNav is present and fixed-->
+    <!--On desktop navbar is hide, sideNav is present and fixed-->
     <nav class="blue fix hide-on-large-only">
-      <!--On Mobile-->
-      <!--My photo as a brand and my name both on the left, also a hambuger icon for access sideNav-->
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </nav>
     <!--Desktop sideNav-->
     <ul class=" side-nav fixed left hide-on-med-and-down">
       <!--Side nav always present on desktop, hide on mobile-->
       <!--Show the index for the different section, make auto hide when user select content-->
-      <li class=" blue profile-bg"><!--My photo as a brand-->
-        <!--My photo-->
+      <li class=" blue profile-bg"><!--My name as a brand-->
+        <!--My name-->
           <img src="images/logo/log1.png" alt="Jean Carlo Semprit Rodriguez photo"/>
       </li>
-      <!--Link to home-->
-      <li class="noPadding"><a href="#home" class="waves-effect waves-blue">
-        <i class="material-icons">store</i>Home</a></li>
-      <!--Link to about-me-->
-      <li class="noPadding"><a href="#about-me" class="waves-effect waves-blue ">
-        <i class="material-icons">person_pin</i>About Me</a></li>
-      <!--Link to project-->
-      <li class="noPadding"><a href="#project" class="waves-effect waves-blue ">
-        <i class="material-icons">view_module</i>Project</a></li>
-      <!--Link to resume-->
-      <li class="noPadding"><a href="#skill" class="waves-effect waves-blue ">
-        <i class="material-icons">equalizer</i>Skill & Education</a></li>
-      <!--Link to contact-->
-      <li class="noPadding"><a href="#contact" class="waves-effect waves-blue ">
-        <i class="material-icons">contacts</i>Contact</a></li>
+      <ul id="section-list">
+        <!--Link to home-->
+        <li id="item01" class="noPadding list-item active-list">
+          <a href="#home" class="waves-effect waves-blue">
+          <i class="material-icons">store</i>Home</a>
+        </li>
+        <!--Link to about-me-->
+        <li id="item02" class="noPadding list-item">
+          <a href="#about-me" class="waves-effect waves-blue ">
+          <i class="material-icons">person_pin</i>About Me</a>
+        </li>
+        <!--Link to project-->
+        <li id="item03" class="noPadding list-item">
+          <a href="#project" class="waves-effect waves-blue ">
+          <i class="material-icons">view_module</i>Project</a>
+        </li>
+        <!--Link to resume-->
+        <li id="item04" class="noPadding list-item">
+          <a href="#skill" class="waves-effect waves-blue ">
+          <i class="material-icons">equalizer</i>Skill & Education</a>
+        </li>
+        <!--Link to contact-->
+        <li id="item05" class="noPadding list-item">
+          <a href="#contact" class="waves-effect waves-blue ">
+          <i class="material-icons">contacts</i>Contact</a>
+        </li>
+      </ul>
     </ul>
     <!--Mobile sideNav-->
     <ul id="slide-out" class=" side-nav fixed left hide-on-large-only">
@@ -62,22 +70,23 @@
         <!--My photo-->
           <img src="images/logo/log1.png" alt="Jean Carlo Semprit Rodriguez logo"/>
       </li>
-      <!--Link to home-->
-      <li class="noPadding"><a href="#home" class="waves-effect waves-blue">
-        <i class="material-icons">store</i>Home</a></li>
-      <!--Link to about-me-->
-      <li class="noPadding"><a href="#about-me" class="waves-effect waves-blue ">
-        <i class="material-icons">person_pin</i>About Me</a></li>
-      <!--Link to project-->
-      <li class="noPadding"><a href="#project" class="waves-effect waves-blue ">
-        <i class="material-icons">view_module</i>Project</a></li>
-      <!--Link to resume-->
-      <li class="noPadding"><a href="#skill" class="waves-effect waves-blue ">
-        <i class="material-icons">equalizer</i>Skill & Education</a></li>
-      <!--Link to contact-->
-      <li class="noPadding"><a href="#contact" class="waves-effect waves-blue ">
-        <i class="material-icons">contacts</i>Contact</a></li>
-    </ul>
+      <ul>
+        <!--Link to home-->
+        <li class="noPadding"><a href="#home" class="waves-effect waves-blue">
+          <i class="material-icons">store</i>Home</a></li>
+        <!--Link to about-me-->
+        <li class="noPadding"><a href="#about-me" class="waves-effect waves-blue ">
+          <i class="material-icons">person_pin</i>About Me</a></li>
+        <!--Link to project-->
+        <li class="noPadding"><a href="#project" class="waves-effect waves-blue ">
+          <i class="material-icons">view_module</i>Project</a></li>
+        <!--Link to resume-->
+        <li class="noPadding"><a href="#skill" class="waves-effect waves-blue ">
+          <i class="material-icons">equalizer</i>Skill & Education</a></li>
+        <!--Link to contact-->
+        <li class="noPadding"><a href="#contact" class="waves-effect waves-blue ">
+          <i class="material-icons">contacts</i>Contact</a></li>
+      </ul>
   </header><!--End header-->
   <main class="main-content">
     <!--Section 1 Welcome & parallax-->
