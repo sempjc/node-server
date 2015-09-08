@@ -69,33 +69,33 @@ h2, h4 {
 }
 
 .input-field input[type=text]:focus + label {
-  color:yellow;
+  color:#1976D2;
 }
 .input-field input[type=email]:focus + label {
-  color:yellow;
+  color:#1976D2;
 }
 .input-field input[type=tel]:focus + label {
-  color:yellow;
+  color:#1976D2;
 }
 
 .input-field label.active {
-  color:yellow;
+  color:#1976D2;
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid yellow;
-  box-shadow: 0 1px 0 0 yellow;
+  border-bottom: 1px solid #1976D2;
+  box-shadow: 0 1px 0 0 #1976D2;
 }
 
 .input-field input[type=email]:focus {
-  border-bottom: 1px solid yellow;
-  box-shadow: 0 1px 0 0 yellow;
+  border-bottom: 1px solid #1976D2;
+  box-shadow: 0 1px 0 0 #1976D2;
 }
 .input-field input[type=tel]:focus {
-  border-bottom: 1px solid yellow;
-  box-shadow: 0 1px 0 0 yellow;
+  border-bottom: 1px solid #1976D2;
+  box-shadow: 0 1px 0 0 #1976D2;
 }
 textarea.materialize-textarea:focus:not([readonly]){
-  border-bottom: 1px solid yellow;
-  box-shadow: 0 1px 0 0 yellow;
+  border-bottom: 1px solid #1976D2;
+  box-shadow: 0 1px 0 0 #1976D2;
 }
