@@ -13,6 +13,7 @@ i {
   vertical-align: middle;
 }
 
+
 .side-nav li{
   border-bottom: 1px solid #B6B6B6;
 }
@@ -22,6 +23,7 @@ i {
 
 #about-me, #project, #skill, #contact {
   padding-top: 50px;
+  padding-bottom: 150px;
 }
   @media only screen and (max-width : 992px) {
     header, main, footer {
